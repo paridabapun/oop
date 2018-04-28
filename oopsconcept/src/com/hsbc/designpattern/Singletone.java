@@ -28,5 +28,13 @@ public class Singletone implements Serializable {
 	 * 
 	 * }
 	 */
+	// Using Approach-2 using public constructor
+
+	// public Singletone() throws Exception {
+	// if (null != single_instance) {
+	// throw new Exception("Object Already Exist");
+	// }
+
+	// }
 
 }
