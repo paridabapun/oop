@@ -3,24 +3,21 @@ package com.hsbc.designpattern;
 import java.io.Serializable;
 
 public class Singletone implements Serializable {
-
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	
-	private static Singletone single_object = null;
+// Using Approach-1
+
+	private static Singletone single_instance = null;
 
 	private Singletone() {
-		System.out.println("New instance");
+		System.out.println("New Object Created ");
 	}
 
 	public static Singletone getInstance() {
-		if (null == single_object) {
-			single_object = new Singletone();
+		if (null == single_instance) {
+			single_instance = new Singletone();
 		}
 
-		return single_object;
+		return single_instance;
 	}
 
 }
