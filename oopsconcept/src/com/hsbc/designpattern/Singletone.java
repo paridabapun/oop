@@ -21,7 +21,7 @@ public class Singletone implements Serializable {
 		return single_instance;
 	}
 
-	// Using Approach-2 using public constructor
+	// Using Approach-2 using public constructor 
 
 	public Singletone() throws Exception {
 		if (null != single_instance) {
