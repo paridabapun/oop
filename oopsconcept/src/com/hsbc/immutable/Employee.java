@@ -2,13 +2,14 @@ package com.hsbc.immutable;
 
 import com.hsbc.cloneexample.Address;
 
-public class Employee {
+public final class Employee {
 
-	private String employee_id;
-	private String employee_name;
-	private Address addresss;
+	private final String employee_id;
+	private final String employee_name;
+	private final Address addresss;
 
 	public Employee(String employee_id, String employee_name, Address addresss) {
+		System.out.println("Employee Constructor executed");
 		this.employee_id = employee_id;
 		this.employee_name = employee_name;
 		this.addresss = addresss;
