@@ -21,7 +21,6 @@ public final class ImmutableClass {
 		return new ImmutableClass(fld1, fld2, date);
 	}
 
-
 	/**
 	 * Integer class is immutable so we can return the instance variable as it is
 	 */
