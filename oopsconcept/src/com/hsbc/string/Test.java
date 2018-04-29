@@ -19,6 +19,10 @@ public class Test {
 		int i = 0;
 		System.out.println("Value od i =  " + i++);
 		System.out.println("Value od i =  " + ++i);
+		
+		String s1="Bhagabata";
+		System.out.println(s1);
+		System.out.println(s1.intern());
 
 	}
 

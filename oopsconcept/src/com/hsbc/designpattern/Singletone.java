@@ -8,9 +8,9 @@ public class Singletone implements Serializable {
 
 	private static Singletone single_instance = null;
 
-	private Singletone() {
-		System.out.println("New Object Created ");
-	}
+//	private Singletone() {
+//		System.out.println("New Object Created ");
+//	}
 
 	public static Singletone getInstance() throws Exception {
 		if (null == single_instance) {
@@ -30,11 +30,14 @@ public class Singletone implements Serializable {
 	 */
 	// Using Approach-2 using public constructor
 
-	// public Singletone() throws Exception {
-	// if (null != single_instance) {
-	// throw new Exception("Object Already Exist");
-	// }
-
-	// }
+	 public Singletone() throws Exception {
+		 
+	 if (null != single_instance) {
+		 System.out.println("Inside not noll");
+	 throw new Exception("Object Already Exist");
+	 }
+	 
+System.out.println("First Object Created");
+	 }
 
 }
