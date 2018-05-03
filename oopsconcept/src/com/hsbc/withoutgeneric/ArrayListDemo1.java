@@ -1,13 +1,16 @@
 package com.hsbc.withoutgeneric;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 import java.util.RandomAccess;
 
 public class ArrayListDemo1 {
+	static ArrayList<Object> a1;
 	public static void main(String[] args) {
-		ArrayList<Object> a1 = new ArrayList<Object>(78);
+		a1 = new ArrayList<Object>(78);
 		List<Object> l1 = Collections.synchronizedList(a1);
 		System.out.println(a1.hashCode());// 1
 		System.out.println(l1.hashCode());// 1
@@ -50,5 +53,25 @@ public class ArrayListDemo1 {
 		System.out.println(l1);
 		System.out.println(l1.size());
 		System.out.println(l1.get(2));
+
+		System.out.println("Final list after all operation " + "\n" + a1);
+
+		// Iterating all elements using iterator
+		System.out.println("// Iterating all elements using iterator");
+		Iterator iterator=a1.iterator();
+		while(iterator.hasNext()) {
+			
+			System.out.println(iterator.next());
+		}
+		
+		
+		//Iterating through for each
+		System.out.println("//Iterating through for each");
+		for(Object o: a1) {
+			System.out.println(o);
+			
+		}
+
+	
 	}
 }
