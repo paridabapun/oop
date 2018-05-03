@@ -1,20 +1,42 @@
 package com.hsbc.withgeneric;
-//Sort the elements of  the List based on Natural Sorting order
+
+
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.Iterator;
+import java.util.ListIterator;
 
 public class ArrayListDemo {
+
 	public static void main(String[] args) {
-		List<String> l1 = new ArrayList<String>();
-		l1.add("B");
-		l1.add("Z");
-		l1.add("A");
-		l1.add("BA");
-		l1.add("ZP");
-		l1.add("AA");
-		System.out.println(l1);
-		Collections.sort(l1);
-		System.out.println("natural sorting order" + l1);
+
+		ArrayList<String> list = new ArrayList<String>();// Bhagabata,Tapu,Akansksha,Bhagabata,Tapu,Akansksha,
+		System.out.println(list.size());
+		list.add("Bapun");
+		list.add("Tapu");
+		list.add("Akanksha");
+		System.out.println(list.size());
+		list.add("Bapun");
+		list.add("Tapu");
+		list.add("Akanksha");
+		System.out.println(list.size());
+		System.out.println(list);
+		list.remove(1);
+		System.out.println(list);
+
+		ListIterator<String> listIterator = list.listIterator();
+
+		while (listIterator.hasNext()) {
+			String element = listIterator.next();
+			System.out.println(element);
+		}
+		while (listIterator.hasPrevious()) {
+			System.out.println(listIterator.previous());
+		}
+
+		Iterator<String> iterator = list.iterator();
+		while (iterator.hasNext()) {
+			System.out.println(iterator.next());
+		}
 	}
+
 }
