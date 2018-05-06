@@ -21,7 +21,7 @@ public class StringHelper {
 	public static String charInsert(String str, char c, int j) {
 		String begin = str.substring(0, j);
 		String end = str.substring(j);
-		return begin + c + end;
+		return begin + c + end; 
 	}
 
 	public static void main(String[] args) {
