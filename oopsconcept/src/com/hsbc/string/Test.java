@@ -23,7 +23,7 @@ public class Test {
 		String s1="Bhagabata";
 		System.out.println(s1);
 		System.out.println(s1.intern());
-
+		
 	}
 
 }
