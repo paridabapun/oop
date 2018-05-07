@@ -29,6 +29,7 @@ public class StringHelper {
 		String s1 = "ABC";
 		String s2 = "ABCD";
 		String s5="123";
+		String s3="1234";
 		System.out.println("\nPermutations for " + s + " are: \n" + permutationFinder(s));
 		System.out.println("\nPermutations for " + s1 + " are: \n" + permutationFinder(s1));
 		System.out.println("\nPermutations for " + s2 + " are: \n" + permutationFinder(s2));
