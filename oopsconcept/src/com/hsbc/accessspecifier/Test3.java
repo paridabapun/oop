@@ -1,5 +1,5 @@
 package com.hsbc.accessspecifier;
-import pack1.C;
+
 class Test3 
 {
 	public static void main(String[] args) 

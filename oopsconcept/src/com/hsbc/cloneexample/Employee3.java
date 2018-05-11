@@ -61,7 +61,7 @@ public class Employee3 implements Cloneable {
 		System.out.println("Original Employee obj" + original);
 		Employee3 clone = (Employee3) original.clone();
 		System.out.println(clone);
-		clone.getAddr().setAddress("hyderabad..");
+//		clone.getAddr().setAddress("hyderabad..");
 		System.out.println("Original changed check it" + original);// not
 																	// changed...
 		Employee3 emp = new Employee3(original);

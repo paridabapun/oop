@@ -7,7 +7,7 @@ class Odemo3
 		A a2=new A();
 		A a3=a2;
 		System.out.println(a1);
-		System.out.println("HashCode  :"+a1.hashCode()0.0);
+		System.out.println("HashCode  :"+a1.hashCode());
 		System.out.println(a2);
 		System.out.println(a3);
 		A a4=a3;

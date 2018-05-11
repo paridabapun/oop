@@ -15,7 +15,7 @@ class Odemo11
 		d1.fun1(null);
 		A a1=new A();
 		A a2=new A();
-		d1.fun1(a2).;
+		d1.fun1(a2);
 		System.out.println(a1.i);
 		d1.fun1(new A());
 		System.out.println(a1.i);

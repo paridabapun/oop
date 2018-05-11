@@ -69,7 +69,7 @@ public class Employee2 implements Cloneable {
 		System.out.println(cloned);
 
 		// problem in the code see below...
-		cloned.getAddr().setAddress("Pune");
+//		cloned.getAddr().setAddress("Pune");
 		System.out.println(original);// value changed.....
 		// Oops, cloned object changes are visible in original also. This way
 		// cloned objects can make havoc in system if allowed to do so. Anybody
@@ -80,7 +80,7 @@ public class Employee2 implements Cloneable {
 		// copy constructors.
 		Employee2 emp = new Employee2(original);
 		System.out.println("Copy Constructor.... " + emp);
-		emp.getAddr().setAddress("New Pune");
+//		emp.getAddr().setAddress("New Pune");
 		System.out.println(original);// not at all
 		emp.setEname("Hari");
 		System.out.println(original);// not effected in case of primitive....
