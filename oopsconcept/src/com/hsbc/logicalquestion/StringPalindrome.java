@@ -1,15 +1,17 @@
 package com.hsbc.logicalquestion;
 
+import static java.lang.System.out;
+
 public class StringPalindrome {
 
     public static  void  checkPalindrome (String s){
         StringBuffer stringBuffer=new StringBuffer(s);
         String s1=stringBuffer.reverse().toString();
         if (s1.equalsIgnoreCase(s)){
-            System.out.println("Palindrome");
+            out.println("Palindrome");
         }
         else {
-            System.out.println("not Palindrome");
+            out.println("not Palindrome");
         }
     }
 
