@@ -16,7 +16,7 @@ class Poly3
 	{
 		Poly3 p1=new Poly3();
 		p1.fun1(new A());
-		p1.fun1(null);
+//		p1.fun1(null);
 }
 }
 

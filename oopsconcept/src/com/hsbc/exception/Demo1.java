@@ -16,9 +16,8 @@ class Demo1
 			}
 		
 		}
-	
 
-	System.out.println("x : "+x);//unreachable statement
+//	System.out.println("x : "+x);//unreachable statement
 		}
 	}
 

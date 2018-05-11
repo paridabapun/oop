@@ -13,6 +13,6 @@ class AbnormalTermn
 	ArithmeticException ae=new ArithmeticException();
 	System.out.println(ae);
 	System.out.println(result);
-	System sm=new System();
+//	System sm=new System();
 	}
 }

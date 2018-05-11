@@ -7,7 +7,7 @@ class Demo
 		int x=0;
 		System.out.println(x);
 x=x+1;
-i=i+1;
+//i=i+1;
 	System.out.println(x);
 }
 }
