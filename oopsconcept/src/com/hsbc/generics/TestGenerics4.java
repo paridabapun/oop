@@ -1,3 +1,5 @@
+package com.hsbc.generics;
+
 public class TestGenerics4{
 
    public static < E > void printArray(E[] elements) {

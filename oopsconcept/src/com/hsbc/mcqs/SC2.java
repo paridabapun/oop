@@ -1,15 +1,12 @@
 package com.hsbc.mcqs;
 
-class SC2
-{
-    public static void main(String [] args) 
-    {
+class SC2 {
+    public static void main(String[] args) {
         SC2 s = new SC2();
         s.start();
     }
 
-    void start() 
-    {
+    void start() {
         int a = 3;
         int b = 4;
         System.out.print(" " + 7 + 2 + " ");
@@ -19,8 +16,7 @@ class SC2
         System.out.println(a + b + foo());
     }
 
-    String foo() 
-    {
+    String foo() {
         return "foo";
     }
 }

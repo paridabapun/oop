@@ -1,3 +1,5 @@
+package com.hsbc.generics;
+
 public class GenericMethodEx {
 
 	public static <E> void printArray(E[] inputArray) {

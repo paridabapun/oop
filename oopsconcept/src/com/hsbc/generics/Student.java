@@ -1,3 +1,4 @@
+package com.hsbc.generics;
 
 public class Student {
 	

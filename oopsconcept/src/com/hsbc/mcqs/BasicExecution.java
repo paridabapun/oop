@@ -2,29 +2,31 @@ package com.hsbc.mcqs;
 
 public class BasicExecution {
 
-	BasicExecution() {
+    static int y = 5;
 
-		System.out.println("o arg constructor executed.......");
-	}
+    static {
+        int y = 7;
+        String name = "Bapunu";
+        System.out.println("Static block executed..");
 
-	public int x = 7;
-	static int y = 5;
+    }
 
-	static {
-		int y = 7;
-		String name = "Bapunu";
-		System.out.println("Static block executed..");
+    public int x = 7;
 
-	}
-	{
-		int y = 7;
-		String name = "Bapunu";
-		System.out.println("instance  block executed..");
-	}
+    {
+        int y = 7;
+        String name = "Bapunu";
+        System.out.println("instance  block executed..");
+    }
 
-	public static void main(String[] args) {
-		BasicExecution bex = new BasicExecution();
-		System.out.println();
+    BasicExecution() {
 
-	}
+        System.out.println("o arg constructor executed.......");
+    }
+
+    public static void main(String[] args) {
+        BasicExecution bex = new BasicExecution();
+        System.out.println();
+
+    }
 }

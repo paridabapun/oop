@@ -1,3 +1,5 @@
+package com.hsbc.generics;
+
 import java.util.ArrayList;
 
 public class GenericClassEx<T> {
