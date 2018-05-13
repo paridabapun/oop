@@ -1,36 +1,18 @@
 package com.hsbc.cloneexample;
 
-public class Address implements Cloneable {
-	private int aid;
-	private String address;
+public class Address {
+    private int address_id;
+    private String address_details;
 
-	public Address(int aid, String address) {
-		super();
-		this.aid = aid;
-		this.address = address;
-	}
+    public Address(int address_id, String address_details) {
+        this.address_id = address_id;
+        this.address_details = address_details;
+    }
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see java.lang.Object#toString()
-	 */
-	public String toString() {
-		return "Address [aid=" + aid + ", address=" + address + "]";
-	}
+    @Override
 
-	public int getAid() {
-		return aid;
-	}
-
-
-	public String getAddress() {
-		return address;
-	}
-
-	protected Object clone() throws CloneNotSupportedException {
-		// TODO Auto-generated method stub
-		return super.clone();
-	}
-
+    public String toString() {
+        return "Address ID " + address_id + " " + "Address Details " + address_details;
+    }
 }
+
