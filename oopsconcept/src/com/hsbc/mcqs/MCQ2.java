@@ -8,8 +8,8 @@ public class MCQ2 {
 
         System.out.println(s1);         //Output : JAVA
 
-       s1= s1.concat("J2EE");
+        s1.concat("J2EE");
 
-        System.out.println(s1);         //Output : JAVA
+        System.out.println(s1);
     }
 }
