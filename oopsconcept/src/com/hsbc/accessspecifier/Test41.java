@@ -1,5 +1,5 @@
 package com.hsbc.accessspecifier;
-import pack1.D;
+
 class Test41 extends D
 {
 	public static void main(String[] args) 

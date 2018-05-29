@@ -1,6 +1,6 @@
 package com.hsbc.accessspecifier;
-import packa.A;
-class Test1 
+
+class Test1
 {
 	public static void main(String[] args) 
 	{

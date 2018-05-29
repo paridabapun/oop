@@ -1,5 +1,5 @@
 package com.hsbc.accessspecifier;
-package pack1;
+
 
 class B 
 {

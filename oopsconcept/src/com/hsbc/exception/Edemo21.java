@@ -23,9 +23,9 @@ System.out.println("end of try block");
 catch(Exception e){
 System.out.println(e);
 }
-catch(NullPointerException np){//unreachable block
+/*catch(NullPointerException np){//unreachable block
 System.out.println(np);
-}
+}*/
 
 
 	}

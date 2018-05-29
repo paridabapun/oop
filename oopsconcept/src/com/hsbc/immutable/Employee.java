@@ -1,7 +1,5 @@
 package com.hsbc.immutable;
 
-import com.hsbc.cloneexample.Address;
-
 public final class Employee {
 
 	private final String employee_id;
