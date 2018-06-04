@@ -1,1 +1,1 @@
-package com.hsbc.mcqs;//Deutsche Bankpublic class MCQ9 {    public static void main(String[] args) {        System.out.println(args[4]);    }}
+package com.hsbc.mcqs;//Deutsche Bank//static int arr[]=new int[10];public class MCQ9 {    public static void main(String[] args) {        System.out.println(args[4]);    }}
