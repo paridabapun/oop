@@ -21,7 +21,7 @@ public class TruncateString {
 
     public static void main(String[] args) {
 
-        String name = "My Name is Bhagabata Parida , working a softwer Developer in HSBC";
+        String name = "i want to trim a string having to a certain length ie 42";
         System.out.println("Original String " + name);
 
         String truncateName = truncateString(name);
