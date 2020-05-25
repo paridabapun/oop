@@ -33,6 +33,12 @@ public class HelloWorld {
         helloInteface1.hellow();
         HelloInteface  helloInteface2 = () ->  System.out.println("Hello helloInteface2");;
         helloInteface2.hellow();
+
+        Operation operation = (a, b) -> {
+            System.out.println("Sum of a+b is "+""+a+b);
+        };
+        operation.add(3,6);
+
     }
 
 
