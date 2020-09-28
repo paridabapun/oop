@@ -46,6 +46,8 @@ public class DupArrayListRemoveTest {
 				}
 			}
 		}
+
+
 		arrayList3.addAll(arrayList2);
 		arrayList3.addAll(arrayList);
 		System.out.println(arrayList3);
