@@ -48,7 +48,6 @@ public class SbiEmployee {
         System.out.println(sbiEmployees);
 
 
-
         Predicate<SbiEmployee> sbiEmployeePredicate = employee -> employee.salary >= 10000;
 
 
