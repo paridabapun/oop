@@ -25,6 +25,18 @@ public class SbiEmployee {
     }
 
 
+    public static void display(Predicate<SbiEmployee> sbiEmployeePredicate, ArrayList<SbiEmployee> sbiEmployees) {
+
+
+        for (SbiEmployee sbiEmployee : sbiEmployees) {
+
+            if (sbiEmployeePredicate.test(sbiEmployee)) {
+                System.out.println(sbiEmployee);
+            }
+        }
+
+    }
+
     public static void main(String[] args) {
 
         ArrayList<SbiEmployee> sbiEmployees = new ArrayList<>();
@@ -48,8 +60,31 @@ public class SbiEmployee {
         System.out.println(sbiEmployees);
 
 
-        Predicate<SbiEmployee> sbiEmployeePredicate = employee -> employee.salary >= 10000;
+        System.out.println("=================================================================================");
+        System.out.println("Empoyees more than 50000 Salary");
+        Predicate<SbiEmployee> sbiEmployeePredicate = employee -> employee.salary >= 50000;
 
+        display(sbiEmployeePredicate, sbiEmployees);
+
+        System.out.println("=================================================================================");
+        Predicate<SbiEmployee> sbiEmployeePredicate1 = employee -> employee.designation.equalsIgnoreCase("SSE");
+        System.out.println("Empoyees Designation SSE");
+        display(sbiEmployeePredicate1, sbiEmployees);
+
+        System.out.println("=================================================================================");
+        Predicate<SbiEmployee> sbiEmployeePredicate2 = employee -> employee.location.equalsIgnoreCase("Pune");
+        System.out.println("Empoyees location  pune");
+        display(sbiEmployeePredicate2, sbiEmployees);
+
+        System.out.println("=================================================================================");
+        Predicate<SbiEmployee> sbiEmployeePredicate3 = employee -> employee.salary < 20000;
+        System.out.println("Empoyees Salary less than 20000");
+        display(sbiEmployeePredicate3, sbiEmployees);
+
+        System.out.println("=================================================================================");
+        Predicate<SbiEmployee> sbiEmployeePredicate4 = employee -> employee.salary < 20000;
+        System.out.println("All SSE Empoyees  from Pune");
+        display(sbiEmployeePredicate1.and(sbiEmployeePredicate2), sbiEmployees);
 
     }
 }
